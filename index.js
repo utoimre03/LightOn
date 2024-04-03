@@ -8,12 +8,11 @@ export function listaGeneral() {
     return lista
 }
 
-export function jatekTabla(listaGeneral) {
-    const tablaELEM = $(".tabla")
+export function jatekTabla(lista) {
     let txt = ""
     for (let index = 0; index < lista.length; index++) {
-        txt = `<div id="table">
-        <p>${listaGeneral.lista}</p>
+        txt += `<div id="table">
+        <p>${lista[index]}</p>
         </div>`
     }
     return txt
